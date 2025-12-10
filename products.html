@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wacky Kar Klub</title>
+    <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body id="top" data-page="products">
+
+    <!-- HEADER -->
+    <header>
+        <h1>WACKY KAR KLUB</h1>
+        <nav>
+            <a href="Index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Merchandise</a>
+            <a href="service.html">Services</a>
+            <a href="News and Events.html">News</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 9</div>
+            <img src="assets/Car badge 1.jpg" alt="Car badge 1">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 9</div> <img src="assets/Car badge 2.jpg" alt="Car badge 2">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 9</div> <img src="assets/Car badge 3.jpg" alt="Car badge 3">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 9</div> <img src="assets/classic car mats 1.jpg" alt="Car Mats 1">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 9</div> <img src="assets/Car mats 2.png" alt="Car Mats 2">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 9</div> <img src="assets/classic car mats 3.jpg " alt="Car mats 3">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 9</div> <img src="assets/classic car memorabilia 1.jpg"
+                alt="classic car memorabilia 1">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext"> 8/ 9</div> <img src="assets/classic car memorabilia 2.jpeg"
+                alt="classic car memorabilia 2">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">9/ 9</div> <img src="assets/classic car memorabilia 3.webp"
+                alt="classic car memorabilia 3">
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- Slideshow dots -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <!-- Add more dots if needed -->
+    </div>
+
+    <!-- Products Section -->
+    <div class="products-container">
+        <div class="product-title">
+            <h2>All products we offer</h2>
+        </div>
+
+        <form id="product-filter" class="filters">
+            <label for="filter-products">Products</label>
+            <select name="products" id="filter-products">
+                <option value="">All</option>
+                <option value="Badge">Badge</option>
+                <option value="Mats">Mats</option>
+                <option value="Memorabilia">Memorabilia</option>
+            </select>
+            <button type="button" class="btn" id="product-clear">Clear</button>
+        </form>
+
+        <section id="product-grid" class="product-container">
+            <!-- Badge Products -->
+            <div class="product-card" data-products="Badge">
+                <img src="assets/Car badge 1.jpg" alt="Car Badge 1">
+                <h3>Car Badge 1</h3>
+                <p>£25</p>
+                <p>High-quality enamel car badge, perfect for classic car enthusiasts.</p>
+            </div>
+            <div class="product-card" data-products="Badge">
+                <img src="assets/Car badge 2.jpg" alt="Car Badge 2">
+                <h3>Car Badge 2</h3>
+                <p>£30</p>
+                <p>Stylish chrome badge designed to add a vintage touch to any vehicle.</p>
+            </div>
+            <div class="product-card" data-products="Badge">
+                <img src="assets/Car badge 3.jpg" alt="Car Badge 3">
+                <h3>Car Badge 3</h3>
+                <p>£35</p>
+                <p>Limited edition collector’s badge, made with durable materials.</p>
+            </div>
+
+            <!-- Mats Products -->
+            <div class="product-card" data-products="Mats">
+                <img src="assets/classic car mats 1.jpg" alt="Classic Car Mats 1">
+                <h3>Classic Car Mats 1</h3>
+                <p>£40</p>
+                <p>Premium quality mats designed for comfort and protection in classic cars.</p>
+            </div>
+            <div class="product-card" data-products="Mats">
+                <img src="assets/Car mats 2.png" alt="Car Mats 2">
+                <h3>Car Mats 2</h3>
+                <p>£45</p>
+                <p>Durable and easy-to-clean car mats suitable for all vehicle types.</p>
+            </div>
+            <div class="product-card" data-products="Mats">
+                <img src="assets/classic car mats 3.jpg" alt="Classic Car Mats 3">
+                <h3>Classic Car Mats 3</h3>
+                <p>£50</p>
+                <p>Elegant mats with classic design to complement vintage car interiors.</p>
+            </div>
+
+            <!-- Memorabilia Products -->
+            <div class="product-card" data-products="Memorabilia">
+                <img src="assets/classic car memorabilia 1.jpg" alt="Memorabilia 1">
+                <h3>Memorabilia 1</h3>
+                <p>£60</p>
+                <p>Authentic classic car memorabilia, ideal for collectors and fans.</p>
+            </div>
+            <div class="product-card" data-products="Memorabilia">
+                <img src="assets/classic car memorabilia 2.jpeg" alt="Memorabilia 2">
+                <h3>Memorabilia 2</h3>
+                <p>£65</p>
+                <p>Unique collectible item representing iconic cars from the past.</p>
+            </div>
+            <div class="product-card" data-products="Memorabilia">
+                <img src="assets/classic car memorabilia 3.webp" alt="Memorabilia 3">
+                <h3>Memorabilia 3</h3>
+                <p>£70</p>
+                <p>Limited edition memorabilia, perfect for display in any collection.</p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-left">WACKY KAR KLUB</div>
+
+            <div class="social-icons">
+                <span>📘</span>
+                <span>📸</span>
+                <span>✉️</span>
+            </div>
+
+            <div class="contact">
+                <p>info@wack-karcklub.com<br>1254567850</p>
+                <p><a href="#top">Back to Top</a></p>
+            </div>
+        </footer>
+        <script src="javascript/app.js" defer></script>
+</body>
+
+</html>
